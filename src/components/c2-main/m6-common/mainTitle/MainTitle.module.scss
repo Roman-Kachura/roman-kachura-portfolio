@@ -1,0 +1,34 @@
+@import '../../../../styles/scss/mixins';
+@import '../../../../styles/scss/variable';
+
+.mainTitle {
+  @include flexCenter;
+  margin-bottom: 5px;
+}
+
+.title {
+  text-transform: uppercase;
+  @include text($secondTextFontFamily,$primaryTitleFontSize,$titleLineHeight,$titleFontWeight,$secondColor);
+  letter-spacing: 3px;
+
+  span {
+    color: $primaryColor;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .mainTitle {
+    //margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .mainTitle {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px){
+  .mainTitle {
+    //margin-bottom: 15px;
+  }
+}

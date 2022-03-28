@@ -1,0 +1,49 @@
+@import "variable";
+
+@mixin text($fontFamily,$FontSize,$lineHeight,$fontWeight,$color) {
+  font-size: $FontSize;
+  font-family: $fontFamily;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  color:$color;
+}
+
+@mixin background($url){
+  background-image:url($url) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin link{
+  @include text($secondTextFontFamily,18px,40px,$textFontWeight,$secondColor)
+}
+
+@mixin btn($hoverText){
+  display: inline-block;
+  width: 150px;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: $linkFontSize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: $secondTextFontFamily;
+  background-color: $primaryColor;
+  border:2px solid $primaryColor;
+  color:$textColor;
+  text-transform: uppercase;
+  -webkit-transition: .2s background-color ease;
+  -o-transition: .2s background-color ease;
+  transition: .2s background-color ease;
+  cursor: pointer;
+
+  &:hover{
+    background: rgba(0, 0, 0, 0);
+    color: $hoverText;
+  }
+}
+
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

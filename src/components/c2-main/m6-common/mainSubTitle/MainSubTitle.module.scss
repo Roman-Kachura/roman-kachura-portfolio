@@ -1,0 +1,36 @@
+@import '../../../../styles/scss/mixins';
+@import '../../../../styles/scss/variable';
+
+.mainSubTitle {
+  h4 {
+    color: #0E1F37;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &:before {
+      content: '';
+      width: 30px;
+      height: 3px;
+      background-color: $primaryColor;
+      position: absolute;
+      bottom: 8px;
+      left: -25px;
+    }
+
+    &:after {
+      content: '';
+      width: 30px;
+      height: 3px;
+      background-color: $primaryColor;
+      position: absolute;
+      bottom: 8px;
+      right: -25px;
+    }
+  }
+}
