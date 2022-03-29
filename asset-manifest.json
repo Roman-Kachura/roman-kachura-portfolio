@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/roman-kachura-portfolio/static/css/main.4c1f3cd4.css",
+    "main.js": "/roman-kachura-portfolio/static/js/main.28358fdb.js",
+    "static/js/787.d83b9b65.chunk.js": "/roman-kachura-portfolio/static/js/787.d83b9b65.chunk.js",
+    "static/media/restAPI.png": "/roman-kachura-portfolio/static/media/restAPI.ce28f12c33b50d8b9162.png",
+    "static/media/homeimage.jpeg": "/roman-kachura-portfolio/static/media/homeimage.eeb7a0b23dc9aca1fe7f.jpeg",
+    "static/media/social-network.jpg": "/roman-kachura-portfolio/static/media/social-network.cd66082daf4921fe3309.jpg",
+    "static/media/todolist.jpeg": "/roman-kachura-portfolio/static/media/todolist.ce03fa0a1ade30c6f40e.jpeg",
+    "static/media/ANTD.png": "/roman-kachura-portfolio/static/media/ANTD.c03ca91a57fc8409945f.png",
+    "static/media/AXIOS.png": "/roman-kachura-portfolio/static/media/AXIOS.8c3d794059a5251fa879.png",
+    "static/media/question-mark.jpg": "/roman-kachura-portfolio/static/media/question-mark.86e40fde96de9d2920c6.jpg",
+    "static/media/MUI.png": "/roman-kachura-portfolio/static/media/MUI.5f05b780d64dccc71e9e.png",
+    "static/media/redux.png": "/roman-kachura-portfolio/static/media/redux.1edba70acbe0a2484e24.png",
+    "static/media/react.png": "/roman-kachura-portfolio/static/media/react.6370d4be6adff0850852.png",
+    "static/media/JSandTS.png": "/roman-kachura-portfolio/static/media/JSandTS.6fe6a8a7d6e7804f7a02.png",
+    "static/media/html-5.png": "/roman-kachura-portfolio/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
+    "static/media/css-3.png": "/roman-kachura-portfolio/static/media/css-3.4a6549b8c2b4cda8bb88.png",
+    "index.html": "/roman-kachura-portfolio/index.html",
+    "main.4c1f3cd4.css.map": "/roman-kachura-portfolio/static/css/main.4c1f3cd4.css.map",
+    "main.28358fdb.js.map": "/roman-kachura-portfolio/static/js/main.28358fdb.js.map",
+    "787.d83b9b65.chunk.js.map": "/roman-kachura-portfolio/static/js/787.d83b9b65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c1f3cd4.css",
+    "static/js/main.28358fdb.js"
+  ]
+}
