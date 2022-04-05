@@ -12,8 +12,16 @@ import {faEnvelope, faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-i
 import {Fade} from "react-awesome-reveal";
 import {MainSubTitle} from "../m6-common/mainSubTitle/MainSubTitle";
 import MyForm from "./MyForm";
+import {useDispatch} from "react-redux";
+import {setIsShowModalTC} from "../../c0-app/appReducer";
 
 export const Contacts = () => {
+    const dispatch = useDispatch();
+
+    const sendMessage = (name: string, email: string, message: string) => {
+        dispatch(setIsShowModalTC(name, email, message));
+    }
+
     return (
         <div id='contacts' className={style.contacts}>
             <div className='container'>
@@ -21,7 +29,9 @@ export const Contacts = () => {
                 <MainSubTitle subTitle={'CONTACT WITH ME'}/>
                 <Fade direction='left' duration={1500}>
                     <div className={style.formWrapper}>
-                        <MyForm/>
+                        <MyForm
+                            sendMessage={sendMessage}
+                        />
                         <div className={style.contactInfo}>
                             <p>
                                 You can contact me in a way convenient for you.
@@ -34,25 +44,25 @@ export const Contacts = () => {
                                 </li>
                                 <li>
                                     <i><FontAwesomeIcon icon={faEnvelope}/></i>
-                                    <a target='_blank' href='mailto:roma.kachyra@gmail.com'>roma.kachyra@gmail.com</a>
+                                    <a href='mailto:roma.kachyra@gmail.com'>roma.kachyra@gmail.com</a>
                                 </li>
                                 <li>
                                     <i><FontAwesomeIcon icon={faMapMarkerAlt}/></i>
-                                    <a target='_blank' href='https://clck.ru/eSR5G'>Warsaw, Poland</a>
+                                    <a href='https://clck.ru/eSR5G'>Warsaw, Poland</a>
                                 </li>
                             </ul>
 
                             <div className={style.social}>
-                                <a target='_blank' href='https://instagram.com/roman_kachura?utm_medium=copy_link'>
+                                <a href='https://instagram.com/roman_kachura?utm_medium=copy_link'>
                                     <i><FontAwesomeIcon icon={faInstagram}/></i>
                                 </a>
-                                <a target='_blank' href='https://www.linkedin.com/in/roman-kachura-201b07229'>
+                                <a href='https://www.linkedin.com/in/roman-kachura-201b07229'>
                                     <i><FontAwesomeIcon icon={faLinkedinIn}/></i>
                                 </a>
-                                <a target='_blank' href='https://t.me/roman_kachura'>
+                                <a href='https://t.me/roman_kachura'>
                                     <i><FontAwesomeIcon icon={faTelegramPlane}/></i>
                                 </a>
-                                <a target='_blank' href='https://www.facebook.com/profile.php?id=100068449718499'>
+                                <a href='https://www.facebook.com/profile.php?id=100068449718499'>
                                     <i><FontAwesomeIcon icon={faFacebookF}/></i>
                                 </a>
                             </div>

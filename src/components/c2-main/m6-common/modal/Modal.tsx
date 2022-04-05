@@ -3,15 +3,13 @@ import style from './Modal.module.scss';
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
 
 type ModalPropsType = {
-    showModal: boolean
-    sendMessage: (isShowModal: boolean) => void
+    isShowModal: boolean
+    closeModal: () => void
 }
 
-export const Modal = ({showModal, sendMessage}: ModalPropsType) => {
-    const finalClassName = showModal ? `${style.showModal} ${style.modal}` : `${style.modal}`;
-    const onClickHandler = () => {
-        sendMessage(false);
-    }
+export const Modal = ({isShowModal, closeModal}: ModalPropsType) => {
+    const finalClassName = isShowModal ? `${style.showModal} ${style.modal}` : `${style.modal}`;
+
     return (
         <div className={finalClassName}>
             <div className={style.modalContainer}>
@@ -21,7 +19,7 @@ export const Modal = ({showModal, sendMessage}: ModalPropsType) => {
                 <div className={style.modalText}>
                     <span>Thanks for your message. I try answer you soon :)</span>
                 </div>
-                <button onClick={onClickHandler} className={style.modalButton}>OK</button>
+                <button onClick={closeModal} className={style.modalButton}>OK</button>
             </div>
         </div>
     )

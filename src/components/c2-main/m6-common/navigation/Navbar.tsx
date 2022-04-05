@@ -10,7 +10,9 @@ type NavbarPropsType = {
 export const Navbar = ({headerShow, showMobileMenu}: NavbarPropsType) => {
     let finalClassName = `${style.nav}`;
     if(headerShow) finalClassName += ` ${style.show}`;
-    if(showMobileMenu) finalClassName = `${style.showMobileMenu}`;
+    if(window.innerWidth < 480){
+        if(showMobileMenu) finalClassName = `${style.showMobileMenu}`;
+    }
     return (
         <nav className={finalClassName}>
             <Link activeClass={style.active}
@@ -21,6 +23,15 @@ export const Navbar = ({headerShow, showMobileMenu}: NavbarPropsType) => {
                   offset={-100}
             >
                 Home
+            </Link>
+            <Link activeClass={style.active}
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-60}
+            >
+                About
             </Link>
             <Link activeClass={style.active}
                   to="skills"

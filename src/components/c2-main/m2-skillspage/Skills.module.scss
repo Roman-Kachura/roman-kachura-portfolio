@@ -2,8 +2,6 @@
 @import '../../../styles/scss/variable';
 
 .skills {
-  //min-height: 100vh;
-
   .skillsFade {
     width: 100%;
     .skillsContent {
@@ -61,11 +59,36 @@
 
 @media screen and (max-width: 768px) {
   .skills {
-    .skillsContent {
-      justify-content: center;
+    .skillsFade{
+      .skillsContent {
+        justify-content: space-between;
+        .skillsItem {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
 
-      .skillItem {
-        width: 100%;
+@media screen and (max-width: 480px) {
+  .skills {
+    .skillsFade{
+      .skillsContent {
+        .skillsItem {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills {
+    .skillsFade{
+      .skillsContent {
+        .skillsItem {
+          width: 50%;
+        }
       }
     }
   }

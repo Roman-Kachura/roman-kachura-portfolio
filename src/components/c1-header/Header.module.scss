@@ -18,6 +18,11 @@
   transition: .3s all;
 
   .menuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
     padding: 0;
     z-index: -1000;
     opacity: 0;
@@ -28,6 +33,20 @@
     transform: translateY(-50%);
     transition: .3s;
     color:#000;
+    border:none;
+    background: rgba(0,0,0,0);
+    cursor:pointer;
+
+    .menuIcon{
+      font-size: 20px;
+      color:#000;
+      transition: .3s;
+
+      &:hover,
+      &:focus{
+        color:$primaryColor;
+      }
+    }
   }
 }
 

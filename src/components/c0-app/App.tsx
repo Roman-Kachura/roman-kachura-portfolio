@@ -4,14 +4,21 @@ import {Main} from "../c2-main/Main";
 import {Header} from "../c1-header/Header";
 import {Footer} from "../c3-footer/Footer";
 import {Modal} from "../c2-main/m6-common/modal/Modal";
+import {useDispatch, useSelector} from "react-redux";
+import {AppRootStateType} from "../../store/store";
+import {closeModalTC, StatusType} from "./appReducer";
+import {Spin} from "antd";
+import {LoadingOutlined} from "@ant-design/icons";
 
 function App() {
     const htmlEl = document.querySelector('html');
-    // const showModal:boolean = useSelector<AppRootStateType, boolean>(state => state.app.showModal);
-    const [showModal, setShowModal] = useState(true);
+    const dispatch = useDispatch();
+    const status = useSelector<AppRootStateType, StatusType>(state => state.app.status);
+    const isShowModal = useSelector<AppRootStateType, boolean>(state => state.app.isShowModal);
     const [headerShow, setHeaderShow] = useState(false);
-    const sendMessage = (isShowModal: boolean) => {
-        setShowModal(isShowModal);
+
+    const closeModal = () => {
+        dispatch(closeModalTC());
     }
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -25,19 +32,27 @@ function App() {
         }
     }
 
-    if (showModal) {
+    if (isShowModal || status === 'loading') {
         if (htmlEl) htmlEl.classList.add(`noScroll`);
     } else {
         if (htmlEl) htmlEl.classList.remove(`noScroll`);
     }
-    const finalClassName = showModal ? `${style.app} ${style.showModal}` : `${style.app}`;
+    const finalClassName = isShowModal ? `${style.app} ${style.showModal}` : `${style.app}`;
 
     return (
         <div className={finalClassName}>
+            {status === 'loading'
+                ? <div className={style.spinBlock}>
+                    <Spin>
+                        <LoadingOutlined className={style.loader}/>
+                    </Spin>
+                </div>
+                : null
+            }
             <Header headerShow={headerShow}/>
             <Main/>
             <Footer/>
-            <Modal showModal={showModal} sendMessage={sendMessage}/>
+            <Modal isShowModal={isShowModal} closeModal={closeModal}/>
         </div>
     );
 }
