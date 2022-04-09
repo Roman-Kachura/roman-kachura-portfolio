@@ -2,6 +2,7 @@
 @import '../../../../styles/scss/variable';
 
 .mainSubTitle {
+  margin-bottom: 50px;
   h4 {
     color: #0E1F37;
     font-size: 14px;
@@ -11,7 +12,6 @@
     display: inline-block;
     padding: 0 15px;
     position: relative;
-    margin-bottom: 50px;
 
     &:before {
       content: '';
@@ -32,5 +32,11 @@
       bottom: 8px;
       right: -25px;
     }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .mainSubTitle{
+    margin-bottom: 30px;
   }
 }
