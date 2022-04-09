@@ -5,6 +5,7 @@ const app = express();
 const listenPort = process.env.PORT || 3010;
 const cors = require("cors");
 const bodyParser = require("body-parser");
+
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -17,8 +18,8 @@ app.get('/', (req, res) => {
     res.send('Hello!!!');
 })
 
-app.get('/RomanKachuraCV', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build/RomanKachuraCV.pdf'));
+app.get('/download', (req, res) => {
+    res.sendFile(path.join(__dirname, 'RomanKachuraCV.pdf'));
 })
 
 app.listen(listenPort, () => {
