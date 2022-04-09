@@ -4,16 +4,20 @@
 .mainTitle {
   @include flexCenter;
   margin-bottom: 5px;
+
+  h4{
+    text-transform: uppercase;
+    @include text($secondTextFontFamily,$primaryTitleFontSize,$titleLineHeight,$titleFontWeight,$secondColor);
+    letter-spacing: 3px;
+
+    span {
+      color: $primaryColor;
+    }
+  }
 }
 
 .title {
-  text-transform: uppercase;
-  @include text($secondTextFontFamily,$primaryTitleFontSize,$titleLineHeight,$titleFontWeight,$secondColor);
-  letter-spacing: 3px;
 
-  span {
-    color: $primaryColor;
-  }
 }
 
 @media screen and (max-width: 1024px){

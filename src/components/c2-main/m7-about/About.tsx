@@ -6,10 +6,8 @@ import {Fade} from "react-awesome-reveal";
 import photo from './files/photo_2021-12-09_18-59-26.jpg';
 import {Link} from "react-scroll";
 import {getFile} from "../../../utils/downloadFile";
-import {useLocation} from "react-router-dom";
 
 export const About = () => {
-    const serverUrl = useLocation();
     return (
         <section id='about' className={style.about}>
             <div className={'container'}>
@@ -27,7 +25,7 @@ export const About = () => {
                                 </p>
                             </div>
                             <div className={style.aboutButtonBlock}>
-                                <button onClick={()=> getFile(`https://portfolio-app-server.herokuapp.com/RomanKachuraCV`,'RomanKachuraCV')} className={style.aboutButton}>DOWNLOAD CV</button>
+                                <button onClick={()=> getFile()} className={style.aboutButton}>DOWNLOAD CV</button>
                                 <Link
                                     className={style.aboutButton}
                                     activeClass={style.aboutButton}

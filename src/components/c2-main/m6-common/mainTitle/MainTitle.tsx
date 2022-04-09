@@ -9,11 +9,11 @@ type MainTitlePropsType = {
 }
 
 export const MainTitle = ({title, spanTitleText, ...props}: MainTitlePropsType) => {
-    const finalClassName = props.className ? `${props.className} ${s.title}` : `${s.title}`;
+    const finalClassName = props.className ? `${props.className} ${s.mainTitle}` : `${s.mainTitle}`;
     return (
         <Fade direction='left' duration={1500}>
-            <div className={s.mainTitle}>
-                <h4 className={finalClassName}>{title} <span>{spanTitleText}</span></h4>
+            <div className={finalClassName}>
+                <h4 className={s.title}>{title} <span>{spanTitleText}</span></h4>
             </div>
         </Fade>
     )

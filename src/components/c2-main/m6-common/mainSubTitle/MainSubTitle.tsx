@@ -6,13 +6,15 @@ import s from './MainSubTitle.module.scss';
 
 type MainSubTitlePropsType = {
     subTitle: string;
+    className?:string
 }
 
-export const MainSubTitle = ({subTitle, ...props}: MainSubTitlePropsType) => {
+export const MainSubTitle = ({subTitle,...props}: MainSubTitlePropsType) => {
+    const finalClassName = props.className ? `${props.className} ${s.mainSubTitle}` : `${s.mainSubTitle}`;
     return (
         <Fade direction='right' duration={1500}>
-            <div className={s.mainSubTitle}>
-                <h4 className={''}>{subTitle}</h4>
+            <div className={finalClassName}>
+                <h4>{subTitle}</h4>
             </div>
         </Fade>
     )

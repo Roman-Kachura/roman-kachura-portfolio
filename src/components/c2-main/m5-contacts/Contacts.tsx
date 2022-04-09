@@ -24,9 +24,10 @@ export const Contacts = () => {
 
     return (
         <div id='contacts' className={style.contacts}>
-            <div className='container'>
-                <MainTitle title={'My'} spanTitleText={'Contacts'}/>
-                <MainSubTitle subTitle={'CONTACT WITH ME'}/>
+            <div className={style.contactsWrapper}/>
+            <div className={`container ${style.contactsContainer}`}>
+                <MainTitle className={style.mainTitle} title={'My'} spanTitleText={'Contacts'}/>
+                <MainSubTitle  className={style.mainSubTitle} subTitle={'CONTACT WITH ME'}/>
                 <Fade direction='left' duration={1500}>
                     <div className={style.formWrapper}>
                         <MyForm
@@ -34,7 +35,7 @@ export const Contacts = () => {
                         />
                         <div className={style.contactInfo}>
                             <p>
-                                You can contact me in a way convenient for you.
+                                You can contact me in a way convenient for you or use the form.
                             </p>
 
                             <ul>
