@@ -1,0 +1,80 @@
+@import '../../../styles/scss/mixins';
+@import '../../../styles/scss/variable';
+
+.remote {
+  @include background('https://synchrotheme.com/theme/taso/assets/images/pexels-photo-220067.jpeg');
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: 0;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $bgGradient;
+    z-index: -1;
+    opacity: .6;
+  }
+
+  .title {
+    color: $textColor;
+  }
+
+  .link {
+    text-align: center;
+    @include btn($textColor);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .remote {
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      span {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .remote {
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .link {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .remote {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .remote {
+    .title {
+      font-size: 2.1rem;
+    }
+  }
+}

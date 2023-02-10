@@ -1,0 +1,1 @@
+export const checkTitle = (title: string) => title.length < 22 ? title : `${title.substring(0,21)}...`;
