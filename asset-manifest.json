@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/roman-kachura-portfolio/static/css/main.a6cae276.css",
-    "main.js": "/roman-kachura-portfolio/static/js/main.f2fda65f.js",
+    "main.js": "/roman-kachura-portfolio/static/js/main.d228d860.js",
     "static/js/787.d83b9b65.chunk.js": "/roman-kachura-portfolio/static/js/787.d83b9b65.chunk.js",
     "static/media/waxom.png": "/roman-kachura-portfolio/static/media/waxom.ec666d3a7e7bef3b781d.png",
     "static/media/bouncy.png": "/roman-kachura-portfolio/static/media/bouncy.a555f461860f362e4e5c.png",
@@ -25,11 +25,11 @@
     "static/media/js.png": "/roman-kachura-portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/roman-kachura-portfolio/index.html",
     "main.a6cae276.css.map": "/roman-kachura-portfolio/static/css/main.a6cae276.css.map",
-    "main.f2fda65f.js.map": "/roman-kachura-portfolio/static/js/main.f2fda65f.js.map",
+    "main.d228d860.js.map": "/roman-kachura-portfolio/static/js/main.d228d860.js.map",
     "787.d83b9b65.chunk.js.map": "/roman-kachura-portfolio/static/js/787.d83b9b65.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6cae276.css",
-    "static/js/main.f2fda65f.js"
+    "static/js/main.d228d860.js"
   ]
 }
