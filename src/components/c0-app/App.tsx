@@ -49,9 +49,7 @@ function App() {
         <div className={finalClassName}>
             {status === 'loading'
                 ? <div className={style.spinBlock}>
-                    <Spin>
-                        <LoadingOutlined className={style.loader}/>
-                    </Spin>
+                    <LoadingOutlined className={style.loader}/>
                 </div>
                 : null
             }

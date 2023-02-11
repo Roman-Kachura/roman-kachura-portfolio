@@ -1,13 +1,13 @@
 import axios from "axios";
-// http:localhost:5000/
-// https://portfolio-app-server.herokuapp.com
+// http://localhost:5000/
+// https://roman-kachura-portfolio.herokuapp.com/
 
 export const instance = axios.create({
-    baseURL:'https://portfolio-app-server.herokuapp.com'
+    baseURL:'https://roman-kachura-portfolio.herokuapp.com/'
 })
 
 export const contactApi = {
     sendMessage: async (name: string, email: string, message: string) => {
-        return instance.post('/sendMessage', {name, email, message});
+        return instance.post('/message', {name, email, message});
     }
 }

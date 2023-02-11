@@ -15,7 +15,7 @@ export const Works = () => {
                 <MainSubTitle subTitle={'WHAT I DO'}/>
                 <Fade direction="left" duration={1500} className={style.fade}>
                     <div className={style.worksContent}>
-                        {projects.map(p => <WorksItem link={p.link} github={p.github} title={p.title} img={p.img}/>)}
+                        {projects.map((p,i) => <WorksItem key={i} link={p.link} github={p.github} title={p.title} img={p.img}/>)}
                     </div>
                 </Fade>
             </div>
