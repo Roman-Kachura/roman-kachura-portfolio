@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/roman-kachura-portfolio/static/css/main.a6cae276.css",
+    "main.js": "/roman-kachura-portfolio/static/js/main.f2fda65f.js",
+    "static/js/787.d83b9b65.chunk.js": "/roman-kachura-portfolio/static/js/787.d83b9b65.chunk.js",
+    "static/media/waxom.png": "/roman-kachura-portfolio/static/media/waxom.ec666d3a7e7bef3b781d.png",
+    "static/media/bouncy.png": "/roman-kachura-portfolio/static/media/bouncy.a555f461860f362e4e5c.png",
+    "static/media/corp.png": "/roman-kachura-portfolio/static/media/corp.8f1700789696d493c1fb.png",
+    "static/media/restAPI.png": "/roman-kachura-portfolio/static/media/restAPI.ce28f12c33b50d8b9162.png",
+    "static/media/homeimage.jpeg": "/roman-kachura-portfolio/static/media/homeimage.eeb7a0b23dc9aca1fe7f.jpeg",
+    "static/media/todolist.jpeg": "/roman-kachura-portfolio/static/media/todolist.ce03fa0a1ade30c6f40e.jpeg",
+    "static/media/photo_2021-12-09_18-59-26.jpg": "/roman-kachura-portfolio/static/media/photo_2021-12-09_18-59-26.f6213cb38a65a985f327.jpg",
+    "static/media/ANTD.png": "/roman-kachura-portfolio/static/media/ANTD.c03ca91a57fc8409945f.png",
+    "static/media/AXIOS.png": "/roman-kachura-portfolio/static/media/AXIOS.8c3d794059a5251fa879.png",
+    "static/media/question-mark.jpg": "/roman-kachura-portfolio/static/media/question-mark.86e40fde96de9d2920c6.jpg",
+    "static/media/MUI.png": "/roman-kachura-portfolio/static/media/MUI.5f05b780d64dccc71e9e.png",
+    "static/media/reviews.png": "/roman-kachura-portfolio/static/media/reviews.a7bb0c392910a1c95fa2.png",
+    "static/media/redux.png": "/roman-kachura-portfolio/static/media/redux.1edba70acbe0a2484e24.png",
+    "static/media/react.png": "/roman-kachura-portfolio/static/media/react.6370d4be6adff0850852.png",
+    "static/media/mysql.png": "/roman-kachura-portfolio/static/media/mysql.3c89091c69c068669783.png",
+    "static/media/node-js.png": "/roman-kachura-portfolio/static/media/node-js.1fac080eeec0a547c743.png",
+    "static/media/html-5.png": "/roman-kachura-portfolio/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
+    "static/media/css-3.png": "/roman-kachura-portfolio/static/media/css-3.4a6549b8c2b4cda8bb88.png",
+    "static/media/typescript.png": "/roman-kachura-portfolio/static/media/typescript.af108db04a54d784da9b.png",
+    "static/media/js.png": "/roman-kachura-portfolio/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/roman-kachura-portfolio/index.html",
+    "main.a6cae276.css.map": "/roman-kachura-portfolio/static/css/main.a6cae276.css.map",
+    "main.f2fda65f.js.map": "/roman-kachura-portfolio/static/js/main.f2fda65f.js.map",
+    "787.d83b9b65.chunk.js.map": "/roman-kachura-portfolio/static/js/787.d83b9b65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6cae276.css",
+    "static/js/main.f2fda65f.js"
+  ]
+}
