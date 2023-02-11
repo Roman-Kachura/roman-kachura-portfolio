@@ -2,6 +2,7 @@
   "name": "roman-kachura-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://roman-kachura.github.io/roman-kachura-portfolio/",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@emotion/react": "^11.10.5",
@@ -45,7 +46,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
