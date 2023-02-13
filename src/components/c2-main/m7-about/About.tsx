@@ -19,9 +19,9 @@ export const About = () => {
                             <h4 className={style.aboutTitle}>React front-end developer.</h4>
                             <div className={style.aboutText}>
                                 <p>
-                                    Hello, my name is <strong>Roman</strong>, I'm a front-end developer using React,
-                                    TypeScript,
-                                    Redux and more. My main direction is Single Page Application. I want to find a
+                                    Hello, my name is <strong>Roman</strong>, I'm a full-stack developer using React,
+                                    TypeScript / JavaScript, NodeJS,
+                                    Redux and etc. My main direction is Single Page Application. I want to find a
                                     company and
                                     a team in which I can grow in this direction. You can also see my CV.
                                 </p>

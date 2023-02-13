@@ -4,6 +4,7 @@ import reviewsImage from './images/reviews.png';
 import waxomImage from './images/waxom.png';
 import corpImage from './images/corp.png';
 import bouncyImage from './images/bouncy.png';
+import productImage from './images/product.png';
 
 export type ProjectType = {
     link: string
@@ -30,6 +31,12 @@ export const projects: ProjectType[] = [
         title: 'todolist',
         link: 'https://roman-kachura.github.io/TodoList',
         github: 'https://github.com/Roman-Kachura/TodoList'
+    },
+    {
+        img: productImage,
+        title: 'React layout',
+        link: 'https://roman-kachura.github.io/product_card_layout/',
+        github: 'https://github.com/Roman-Kachura/product_card_layout'
     },
     {
         img: waxomImage,

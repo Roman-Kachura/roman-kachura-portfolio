@@ -3,7 +3,7 @@ import axios from "axios";
 // https://roman-kachura-portfolio.herokuapp.com/
 
 export const instance = axios.create({
-    baseURL:'https://roman-kachura-portfolio.herokuapp.com/',
+    baseURL:'http://localhost:5000/',
     withCredentials: true
 })
 
