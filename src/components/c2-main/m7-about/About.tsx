@@ -16,7 +16,7 @@ export const About = () => {
                 <Fade direction="right" duration={1500}>
                     <div className={style.aboutContent}>
                         <div className={style.contentLeftColumn}>
-                            <h4 className={style.aboutTitle}>React front-end developer.</h4>
+                            <h4 className={style.aboutTitle}>Full-stack developer.</h4>
                             <div className={style.aboutText}>
                                 <p>
                                     Hello, my name is <strong>Roman</strong>, I'm a full-stack developer using React,
