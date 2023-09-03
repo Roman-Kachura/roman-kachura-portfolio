@@ -1,0 +1,95 @@
+@import '../../styles/scss/mixins';
+@import '../../styles/scss/variable';
+
+.skills {
+  .skillsFade {
+    width: 100%;
+    .skillsContent {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .skillsItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        background: #fff;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        overflow: hidden;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .icon {
+          margin: 15px 0;
+
+          i {
+            display: inline-block;
+            height: 70px;
+            width: 70px;
+            background: $primaryColor;
+            border-radius: 50%;
+
+            @include text($iconFontFamily, $iconFontSize, $iconLineHeight, $iconFontWeight, $textColor);
+          }
+        }
+
+        .technology {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-weight: 500;
+          font-size: 2.2rem;
+        }
+
+        .text {
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .skills {
+    .skillsFade{
+      .skillsContent {
+        justify-content: space-between;
+        .skillsItem {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills {
+    .skillsFade{
+      .skillsContent {
+        .skillsItem {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills {
+    .skillsFade{
+      .skillsContent {
+        .skillsItem {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
