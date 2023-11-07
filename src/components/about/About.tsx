@@ -30,7 +30,7 @@ export const About = () => {
                 </p>
               </div>
               <div className={style.aboutButtonBlock}>
-                <a href={cvData.url} target="_blank" download type="file" className={style.aboutButton}>DOWNLOAD CV</a>
+                {cvData && <a href={cvData.url} target="_blank" download type="file" className={style.aboutButton}>DOWNLOAD CV</a>}
                 <Link
                   className={style.aboutButton}
                   activeClass={style.aboutButton}
