@@ -12,6 +12,11 @@ export const appService = createApi({
   reducerPath: 'appApi',
   baseQuery: baseQueryWithReauth,
   endpoints: (build) => ({
+    getCV: build.query<any, void>({
+      query: () => ({
+        url: 'files/pdf/cv'
+      }),
+    }),
     getHeaderImage: build.query<ImageDTO, void>({
       query: () => ({
         url: '/files/image/header'
@@ -62,5 +67,6 @@ export const {
   useGetProjectsQuery,
   useGetAuthorQuery,
   useGetContactsQuery,
-  useSendMessageMutation
+  useSendMessageMutation,
+  useGetCVQuery
 } = appService;

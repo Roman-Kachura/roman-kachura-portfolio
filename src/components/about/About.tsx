@@ -1,14 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import style from './About.module.scss';
-import {MainTitle} from '../common/mainTitle/MainTitle';
-import {MainSubTitle} from '../common/mainSubTitle/MainSubTitle';
-import {Link} from 'react-scroll';
-import {Fade} from 'react-awesome-reveal';
-import {useGetAuthorPhotoQuery} from '../../store/api/appService';
-import {cvBaseUrl} from '../../store/api/baseApiParams';
+import { MainTitle } from '../common/mainTitle/MainTitle';
+import { MainSubTitle } from '../common/mainSubTitle/MainSubTitle';
+import { Link } from 'react-scroll';
+import { Fade } from 'react-awesome-reveal';
+import { useGetAuthorPhotoQuery, useGetCVQuery } from '../../store/api/appService';
+import { cvBaseUrl } from '../../store/api/baseApiParams';
 
 export const About = () => {
-  const {data: authorPhoto} = useGetAuthorPhotoQuery();
+  const { data: authorPhoto } = useGetAuthorPhotoQuery();
+  const { data: cvData } = useGetCVQuery();
 
   return (
     <section id="about" className={style.about}>
@@ -29,7 +30,7 @@ export const About = () => {
                 </p>
               </div>
               <div className={style.aboutButtonBlock}>
-                <a href={cvBaseUrl} target="_blank" download type="file" className={style.aboutButton}>DOWNLOAD CV</a>
+                <a href={cvData.url} target="_blank" download type="file" className={style.aboutButton}>DOWNLOAD CV</a>
                 <Link
                   className={style.aboutButton}
                   activeClass={style.aboutButton}
